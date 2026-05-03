@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lee Jae-lim — Korea JoongAng Daily</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Serif 4', serif;
+      background: #faf9f7;
+      color: #1a1a1a;
+      min-height: 100vh;
+      padding: 3rem 1.5rem;
+    }
+
+    .portfolio {
+      max-width: 680px;
+      margin: 0 auto;
+    }
+
+    .masthead {
+      border-top: 4px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+      padding: 1.5rem 0 1.2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .masthead-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      line-height: 1;
+      color: #1a1a1a;
+    }
+
+    .publication {
+      font-size: 12px;
+      font-weight: 300;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .bio {
+      font-size: 14.5px;
+      font-weight: 300;
+      color: #555;
+      line-height: 1.7;
+      margin-top: 0.9rem;
+      font-style: italic;
+    }
+
+    .contact-line {
+      font-size: 11.5px;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: #999;
+      margin-top: 0.55rem;
+    }
+
+    .contact-line a {
+      color: #555;
+      text-decoration: none;
+      border-bottom: 0.5px solid #ccc;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .contact-line a:hover {
+      color: #1a1a1a;
+      border-color: #1a1a1a;
+    }
+
+    .section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-label {
+      font-family: 'Playfair Display', serif;
+      font-size: 10.5px;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      white-space: nowrap;
+    }
+
+    .section-rule {
+      flex: 1;
+      height: 0.5px;
+      background: #ddd;
+    }
+
+    .article-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .article-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 0.9rem 0;
+      border-bottom: 0.5px solid #e0e0e0;
+      text-decoration: none;
+      color: inherit;
+      transition: opacity 0.15s;
+    }
+
+    .article-item:first-child {
+      border-top: 0.5px solid #e0e0e0;
+    }
+
+    .article-item:hover { opacity: 0.75; }
+
+    .article-thumb {
+      width: 92px;
+      height: 64px;
+      object-fit: cover;
+      border-radius: 3px;
+      flex-shrink: 0;
+      background: #eee;
+    }
+
+    .article-meta { flex: 1; min-width: 0; }
+
+    .article-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 15.5px;
+      font-weight: 400;
+      line-height: 1.45;
+      color: #1a1a1a;
+    }
+
+    .beat-tag {
+      display: inline-block;
+      margin-top: 5px;
+      font-size: 10px;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+      color: #aaa;
+      font-family: 'Source Serif 4', serif;
+      font-style: normal;
+    }
+
+    .arrow { font-size: 14px; color: #bbb; flex-shrink: 0; }
+
+    .footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 0.5px solid #ddd;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #bbb;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      body { padding: 2rem 1rem; }
+      .name { font-size: 36px; }
+      .article-thumb { width: 72px; height: 52px; }
+      .article-title { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="portfolio">
+
+    <div class="masthead">
+      <div class="masthead-top">
+        <div class="name">Lee Jae-lim</div>
+        <div class="publication">Korea JoongAng Daily</div>
+      </div>
+      <p class="bio">Reporter covering the semiconductor industry, with a focus on Samsung Electronics and SK hynix and their global expansion. Also covers shipbuilding, IT, and biotech.</p>
+      <p class="contact-line">Contact: <a href="mailto:jeremeesmile@gmail.com">jeremeesmile@gmail.com</a></p>
+    </div>
+
+    <!-- EXCLUSIVE -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-label">Exclusive</span>
+        <div class="section-rule"></div>
+      </div>
+      <div class="article-list">
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2026-03-03/business/industry/Exclusive-Mass-production-at-Samsungs-Taylor-plant-pushed-back-to-next-year/2534681" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2026/03/04/8d975fdb-8926-444e-b2aa-a90a08e1ee7b.jpg" alt="Samsung Taylor plant" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Mass production at Samsung's Taylor plant slated to begin in 2027</div>
+            <span class="beat-tag">#Semiconductor · #Samsung</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2026-02-06/business/industry/Exclusive-Samsung-secures-key-operation-approval-for-37B-Taylor-factory-/2516907" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2026/02/06/695e1da0-5c4f-4953-9e6d-9a7faf5bc9a6.jpg" alt="Samsung Taylor factory" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Samsung secures key operation approval for $37B Taylor factory</div>
+            <span class="beat-tag">#Semiconductor · #Samsung</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2025-11-13/business/industry/Exclusive-Googles-explanation-questioned-after-Korean-users-report-data-exposure/2453785" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2025/11/13/b715fc23-82dd-4dcc-9b2e-b6421f903ace.jpg" alt="Google data leak Korea" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Korea hit by Google customer service data leak</div>
+            <span class="beat-tag">#IT · #Google</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2025-06-25/business/industry/Exclusive-HD-Hyundai-poised-to-deploy-Starlink-at-surveillence-center-in-Korean-first/2337545" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2025/06/25/c97b1dc6-e3fb-422b-896e-27720b93f576.jpg" alt="HD Hyundai Starlink" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">HD Hyundai poised to deploy Starlink at surveillance center in Korean first</div>
+            <span class="beat-tag">#Shipbuilding · #Technology</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2025-03-25/business/industry/Exclusive-56B-HD-HyundaiAramco-shipbuilding-projects-face-delays/2268692" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2025/03/25/215ac1f3-265c-47ba-9f41-ef1a17b6d179.jpg" alt="HD Hyundai Aramco shipbuilding" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">$5.77B HD Hyundai-Aramco shipbuilding projects face delays</div>
+            <span class="beat-tag">#Shipbuilding · #HD Hyundai</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- REPORTAGE -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-label">Reportage</span>
+        <div class="section-rule"></div>
+      </div>
+      <div class="article-list">
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2026-04-26/business/industry/Samsung-is-making-record-profits-But-why-are-employees-leaving-in-droves-for-a-key-competitor/2577395" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2026/04/26/4c21081f-03e5-4877-8ef1-78d2991743e9.jpg" alt="Samsung employees" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Samsung is making record profits. But why are employees leaving in droves for a key competitor?</div>
+            <span class="beat-tag">#Semiconductor · #Samsung</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2025-07-31/business/industry/Data-center-construction-sparks-NIMBY-opposition-amid-Koreas-big-AI-push/2364743" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2025/07/31/c26a9cdc-c978-4257-8edf-fcb81fcd2165.jpg" alt="Data center NIMBY Korea" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Data center construction sparks NIMBY opposition amid Korea's big AI push</div>
+            <span class="beat-tag">#IT · #AI</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+      </div>
+    </div>
+
+    <!-- FEATURE -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-label">Feature</span>
+        <div class="section-rule"></div>
+      </div>
+      <div class="article-list">
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2026-04-30/business/industry/Samsung-vs-Apple-Foldable-fight-begins-with-wideformat-debuts/2580042" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2026/04/30/967b262c-a929-4f13-8ed9-1dddb35c416b.jpg" alt="Samsung Apple foldable" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Samsung vs. Apple: Foldable fight begins with wide-format debuts</div>
+            <span class="beat-tag">#IT · #Mobile</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2026-04-15/business/industry/Will-Samsung-become-more-profitable-than-Nvidia/2569684" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2026/04/15/9cf7664d-69f4-46fa-8cf9-4bf6df29fcec.jpg" alt="Samsung Nvidia profitability" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Will Samsung become more profitable than Nvidia?</div>
+            <span class="beat-tag">#Semiconductor · #Samsung</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2026-03-12/business/industry/Samsung-and-SK-are-expanding-fast-but-why-is-memory-still-in-short-supply/2540153" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2026/03/12/4322c4d7-47db-4e68-9d58-20ee30da3cad.jpg" alt="Memory chip supply" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Samsung and SK are expanding fast, but why is memory still in short supply?</div>
+            <span class="beat-tag">#Semiconductor · #SK hynix</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2025-12-25/business/industry/Can-Hanwha-build-Trumps-golden-armada-Legal-barriers-poor-US-infrastructure-spark-doubts/2486480" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2025/12/25/35951f8d-64d5-4270-872d-ac940c4f86d5.jpg" alt="Hanwha Trump armada" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Can Hanwha build Trump's golden armada? Legal barriers, poor U.S. infrastructure spark doubts.</div>
+            <span class="beat-tag">#Shipbuilding · #Defense</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2025-12-04/business/industry/Samsung-is-sending-Snapdragon-S26s-to-the-US-Why-has-that-roiled-Korea-and-Europe/2468901" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2025/12/04/0aa39d58-20f6-4fc1-a7ce-cb7ba449bbd9.jpg" alt="Samsung Snapdragon S26" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Samsung is sending Snapdragon S26s to the U.S. Why has that roiled Korea and Europe?</div>
+            <span class="beat-tag">#Semiconductor · #Samsung</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2025-10-20/business/industry/Samsung-ups-Pyeongtaek-chip-plant-contract-to-3B-amid-AI-boom/2421898" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2025/10/21/36a48af2-48d1-4fdb-8d98-1485940fdfff.jpg" alt="Samsung Pyeongtaek AI" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Samsung ups Pyeongtaek chip plant contract to $3B amid AI boom</div>
+            <span class="beat-tag">#Semiconductor · #Samsung</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2025-09-24/business/industry/Korean-Gen-Z-drifts-to-Galaxy-as-young-40s-cling-to-iPhone/2405907" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2025/11/03/4bb6cee5-14a2-4a70-855b-452210664a0e.jpg" alt="Korean Gen Z Galaxy iPhone" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Korean Gen Z drifts to Galaxy as 'Young 40s' cling to iPhone</div>
+            <span class="beat-tag">#IT · #Mobile</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2025-08-29/business/industry/Taylor-mayor-says-Samsungs-Texas-plant-could-launch-ahead-of-schedule/2386216" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2025/08/29/21d5d4aa-9536-4cf1-92b5-003acd6fdfdc.jpg" alt="Taylor mayor Samsung Texas" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Taylor mayor says Samsung's Texas plant could launch ahead of schedule</div>
+            <span class="beat-tag">#Semiconductor · #Samsung</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2025-06-30/business/industry/Samsung-gears-up-for-new-factory-construction-in-Pyeongtaek-aims-to-lead-in-HBM4/2340258" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2025/06/30/0145ffda-f5dd-47ca-9cc1-8095a39f81bd.jpg" alt="Samsung Pyeongtaek HBM4" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Samsung gears up for new factory construction in Pyeongtaek, aims to lead in HBM4</div>
+            <span class="beat-tag">#Semiconductor · #Samsung</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2026-01-08/business/industry/Industry-Ministry-backs-Yongin-for-worlds-largest-chip-cluster-snubs-relocation-push--/2494885" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2026/01/08/8dbb8075-6a90-4e49-b9f8-6ab2f9efc900.jpg" alt="Yongin chip cluster" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">Industry Ministry backs Yongin for world's largest chip cluster, snubs relocation push</div>
+            <span class="beat-tag">#Semiconductor · #Policy</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+        <a class="article-item" href="https://koreajoongangdaily.joins.com/news/2025-06-23/business/industry/With-no-blueprint-Hanwha-reverseengineers-US-Navy-ship-in-bid-for-145B-market/2332407" target="_blank" rel="noopener">
+          <img class="article-thumb" src="https://koreajoongangdaily.joins.com/data/photo/2025/06/27/3ffa805c-d2da-4721-9b3b-b8f7cd5c90f9.jpg" alt="Hanwha US Navy ship" loading="lazy">
+          <div class="article-meta">
+            <div class="article-title">With no blueprint, Hanwha reverse-engineers U.S. Navy ship in bid for $14.5B market</div>
+            <span class="beat-tag">#Shipbuilding · #Defense</span>
+          </div>
+          <div class="arrow">→</div>
+        </a>
+
+      </div>
+    </div>
+
+    <div class="footer">By Lee Jae-lim · Korea JoongAng Daily</div>
+
+  </div>
+</body>
+</html>
